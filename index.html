@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Matrículas</title>
+</head>
+
+<body>
+    <main>
+        <h1>Comprobación de Matrículas</h1>
+        <hr>
+        <form id="form">
+            <label for="matricula">Escribe la matrícula a verificar:</label><br>
+            <input type="text" name="matricula" id="matricula" placeholder="Matrícula"><span
+                id="errorMatricula"></span><br>
+
+            <button id="verificar">Verificar</button>
+            <hr>
+        </form>
+        <p id="mensaje"></p>
+        <div id="gridContainder">
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Matrícula</th>
+                            <th>Modelo</th>
+                            <th>Propietario</th>
+                            <th>Multa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            <div id="divPropietario">Datos Completos:
+                <ul id="propietario">Propietario</ul>
+                <ul id="coche">Coche</ul>
+                <ul id="estado">Estado</ul>
+            </div>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+
+</html>
