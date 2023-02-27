@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -11,37 +11,53 @@
 
 <body>
     <main>
-        <h1>Comprobación de Matrículas</h1>
-        <hr>
+        <h1>Comprobación de Matrículas</h1>        
+        <div id="matriculasPrueba">
+            <ul>Matrículas de Prueba
+                <li>1354 JFS</li>
+                <li>9814 SDG</li>
+                <li>8977 FEE</li>
+                <li>1327 EQV</li>
+                <li>8965 NRT</li>
+            </ul>
+        </div>
         <form id="form">
-            <label for="matricula">Escribe la matrícula a verificar:</label><br>
+            <label for="matricula">Escribe la matrícula a verificar:</label>
             <input type="text" name="matricula" id="matricula" placeholder="Matrícula"><span
-                id="errorMatricula"></span><br>
+                id="errorMatricula"></span>
 
-            <button id="verificar">Verificar</button>
-            <hr>
+            <input id="verificar" type="submit" value="Verificar">
         </form>
-        <p id="mensaje"></p>
-        <div id="gridContainder">
+        
+        <div id="divMensaje">
+            <p id="mensaje"></p>
+        </div>
+
+        <div id="gridContainer">
             <div>
                 <table>
                     <thead>
                         <tr>
+                            <th></th>
                             <th>Matrícula</th>
                             <th>Modelo</th>
                             <th>Propietario</th>
-                            <th>Multa</th>
+                            <th>Multas</th>
                         </tr>
                     </thead>
-                    <tbody>
-
-                    </tbody>
+                    <tbody> </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5">Última búsqueda: <span id="ultimaBusqueda">-</span></td>
+                        </tr>
+                    </tfoot>
                 </table>
+                <button id="vaciar">Vaciar Registros</button>
             </div>
-            <div id="divPropietario">Datos Completos:
-                <ul id="propietario">Propietario</ul>
-                <ul id="coche">Coche</ul>
-                <ul id="estado">Estado</ul>
+
+            <div>
+                <p>Datos Completos:</p>
+                <div id="datosCompletos"> </div>
             </div>
         </div>
     </main>
