@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d28a6644c9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./main.css">
     <title>Matrículas</title>
 </head>
 
 <body>
     <main>
-        <h1>Comprobación de Matrículas</h1>        
+        <h1>Comprobación de Matrículas</h1>
         <div id="matriculasPrueba">
             <ul>Matrículas de Prueba
                 <li>1354 JFS</li>
@@ -23,12 +24,11 @@
         </div>
         <form id="form">
             <label for="matricula">Escribe la matrícula a verificar:</label>
-            <input type="text" name="matricula" id="matricula" placeholder="Matrícula"><span
-                id="errorMatricula"></span>
+            <input type="text" name="matricula" id="matricula" placeholder="Matrícula"><span id="errorMatricula"></span>
 
-            <input id="verificar" type="submit" value="Verificar">
+            <button id="verificar" type="submit"><i class="fa-solid fa-list-check"></i> Verificar</button>            
         </form>
-        
+
         <div id="divMensaje">
             <p id="mensaje"></p>
         </div>
@@ -52,10 +52,10 @@
                         </tr>
                     </tfoot>
                 </table>
-                <button id="vaciar">Vaciar Registros</button>
+                <button id="vaciar"><i class="fa-solid fa-delete-left"></i> Vaciar Registros</button>
             </div>
 
-            <div>
+            <div id="datosCompletos">
                 <p>Datos Completos:</p>
                 <div id="datosCompletos"> </div>
             </div>
